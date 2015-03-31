@@ -95,6 +95,7 @@
    + shorthand for `git branch bugfix` followed by `git checkout bugfix`
  + List all branch
   + `git branch`
+  + `git branch -v`  (list branches and also display the last commit on each branch)
  + Swtich to other branch
   + `git checkout other_branch`
  + Delete a branch
