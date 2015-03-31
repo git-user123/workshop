@@ -1,9 +1,11 @@
-# .gitignore
+# .gitignore file
  + specify intentionally untracked files to ignore
    + [here] (https://github.com/git-user123/project-a/blob/master/.gitignore) is a simple example 
    + basically a pattern match
 
 # Inspection & Comparison 
+## git diff
+
 ## git log (view commit history)
  + ```git log```
   + most recent commits show up first
