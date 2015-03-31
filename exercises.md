@@ -10,7 +10,8 @@
 
 ## .gitignore
  + specify intentionally untracked files to ignore
- 
+   + [here] (https://github.com/git-user123/project-a/blob/master/.gitignore) is a simple example 
+   + basically a pattern match
 
 ## git tag (mark release points)
 + create tag
