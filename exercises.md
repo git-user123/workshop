@@ -37,7 +37,7 @@
 
 ## git stash (save unfinished changes that could be re-apply later)
  + restore the clean working directory
- + ```git stash`` 
+ + ```git stash```
   + stash your work
  + ```git stash list```
  + ```git stash apply```
