@@ -1,3 +1,9 @@
+## Git terminology
+ + Origin
+  + default name Git gives to the server you cloned from
+ + HEAD
+  + You can think of `HEAD` as the "current branch"
+  
 ## Tips & tricks
 + Auto-completion on Mac
  + Copy this [file] (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) to your home directory
