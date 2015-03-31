@@ -5,13 +5,14 @@
 
 # Inspection & Comparison 
 ## git log (view commit history)
- + ```git log```
+ + `git log`
   + most recent commits show up first
   + SHA-1 checksum
   + author info
- + ```git log -p```
+ + `git log <branch_name>`
+ + `git log -p`
   + show difference introduced in each commit
- + ```git log -p -2``` 
+ + `git log -p -2` 
   + last 2 commits
  + ```git log --pretty=oneline``` 
   + useful when looking at a lot of commits
@@ -94,7 +95,8 @@
   + `git checkout -b bugfix`
    + shorthand for `git branch bugfix` followed by `git checkout bugfix`
  + List all branch
-  + `git branch`
+  + `git branch` (list local branches) 
+  + `git branch -r` (also list remote branches)
   + `git branch -v`  (list branches and also display the last commit on each branch)
  + Swtich to other branch
   + `git checkout other_branch`
@@ -106,8 +108,8 @@
 ## Sharing: Pull & Push
  + Push: share your local work with others
  + Pull: get the work others pushed to remote repository
-  + `git fetch` & `git pull`
+  + `git fetch` & `git pull <remote> <branch>`
     + `git fetch --all` (fetch all changes from remote repo, not modify your working directory)
-    + `git pull origin master` (fetch all changes and merge to your local working directory)
+    + `git pull origin master` (fetch all changes from master branch and merge to your local working directory)
   + `git fetch` vs `git pull`
     + `git pull` = `git fetch` followed by `git merge`.
