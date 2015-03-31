@@ -9,7 +9,6 @@
   + most recent commits show up first
   + SHA-1 checksum
   + author info
- + `git log <branch_name>`
  + `git log -p`
   + show difference introduced in each commit
  + `git log -p -2` 
