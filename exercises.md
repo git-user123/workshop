@@ -5,6 +5,12 @@
  + Copy this [file] (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) to your home directory
  + add this to your .bashrc file:
     ```source ~/git-completion.bash```
++ remove untracked files from the working tree
+ + ```git clean -df``` (include untracked directory)
+
+## .gitignore
+ + specify intentionally untracked files to ignore
+ 
 
 ## git tag (mark release points)
 + create tag
@@ -36,7 +42,7 @@
   + ```git log --since="2015-01-01"```
 
 ## git stash (save unfinished changes that could be re-apply later)
- + restore the clean working directory
+ + restore clean local working directory
  + ```git stash```
   + stash your work
  + ```git stash list```
