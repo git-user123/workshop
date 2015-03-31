@@ -1,19 +1,9 @@
-# Exercises
-
-## Tips & tricks
-+ Auto-completion on Mac
- + Copy this [file] (https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) to your home directory
- + add this to your .bashrc file:
-    ```source ~/git-completion.bash```
-+ remove untracked files from the working tree
- + ```git clean -df``` (include untracked directory)
- + ```git checkout .``` (just remove modified files, new files/directories stay)
-
-## .gitignore
+# .gitignore
  + specify intentionally untracked files to ignore
    + [here] (https://github.com/git-user123/project-a/blob/master/.gitignore) is a simple example 
    + basically a pattern match
 
+# Inspection & Comparison 
 ## git log (view commit history)
  + ```git log```
   + most recent commits show up first
@@ -36,6 +26,7 @@
   + ```git blame -L2,4 <file_name>```  (line 2 to 4)
   + ```git blame -L2,+3 <file_name>``` (3 lines since Line 2)
 
+# Workflow managment
 ## git tag (mark release points)
 + create tag
   + ```git tag -a v0.1 -m "version 0.1"```
