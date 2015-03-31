@@ -4,20 +4,6 @@
    + basically a pattern match
 
 # Inspection & Comparison 
-## git diff (
- + ```git diff```
-   + unstaged changes in your working directory
- + ```git diff --cached```
-   + changes between index and your last commit
-   + this is what would be committing if do ```git commit``` without "-a" option
- + ```git diff HEAD```
-   + changes in working directory since your last commit
-   + this is what would be committing if do ```git commit -a```
- + ```git diff [branch_a] [branch_b]```
-   + changes between two branches
- + ```git diff -w```
-   + ignore whitespace change
-
 ## git log (view commit history)
  + ```git log```
   + most recent commits show up first
@@ -33,6 +19,23 @@
   + ```git log --since=yesterday```
   + ```git log --since="2 weeks ago"```
   + ```git log --since="2015-01-01"```
+
+## git diff (show changes between commits, branches, etc)
+ + ```git diff```
+   + show unstaged changes in your working directory
+ + ```git diff --cached```  (same as ```git diff --staged```)
+   + changes between index and your last commit (staged changes)
+   + these changes are made by ```git add```
+   + git index: where files are placed when you want committed to the git repository.
+   + this is what would be committing if do ```git commit``` without "-a" option
+ + ```git diff HEAD```
+   + changes in working directory since your last commit
+   + this is what would be committing if do ```git commit -a```
+ + ```git diff [branch_a] [branch_b]```
+   + changes between two branches
+ + ```git diff [commit_1_hash] [commit_2_hash]```
+ + ```git diff -w```
+   + ignore whitespace change
 
 ## git blame (Who last modified each line of a file?)
  + ```git log <file_name>```
