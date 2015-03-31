@@ -38,7 +38,7 @@
    + ignore whitespace change
 
 ## git blame (Who last modified each line of a file?)
- + ```git log <file_name>```
+ + ```git blame <file_name>```
  + Specify the line range in the file
   + ```git blame -L2,4 <file_name>```  (line 2 to 4)
   + ```git blame -L2,+3 <file_name>``` (3 lines since Line 2)
@@ -62,8 +62,28 @@
  + ```git stash```
   + stash your work
  + ```git stash list```
+ + ```git stash show -p```
+  + display the changes stashed
  + ```git stash apply```
   + apply the change & keep it on stack for later use
  + ```git stash pop```
   + apply the change & then drop it from stack
  + ```git stash drop```
+
+# Branch 
+## Long-running branch
+ + usually represent states in your project lifecycle
+ + production, testing, development
+ + master branch
+   + only has entirely stable code
+   + other parallel dev branches, once stable, merge into master
+## topic branch 
+ + single topic, short lifespan
+ + created for new features, bug fixes, or experiments
+## Branch strategy
+ + one long-running branch only: master branch
+   + **golden rule**: everything that gets merged into "master" must be stable
+   + best suited for small agile team
+   + all topic branches are based off 'master'
+   + recommend merge new stuff from master into your development branch
+   
