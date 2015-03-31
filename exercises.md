@@ -70,7 +70,7 @@
   + apply the change & then drop it from stack
  + ```git stash drop```
 
-# Branch 
+# Branching
 ## Long-running branch
  + usually represent states in your project lifecycle
  + production, testing, development
@@ -88,4 +88,16 @@
    + **golden rule**: everything that gets merged into "master" must be stable
    + best suited for small agile team
    + recommend merge new stuff from master into your development branch
-   
+
+## Basic branching
+ + Create new branch
+  + `git checkout -b bugfix`
+   + shorthand for `git branch bugfix` followed by `git checkout bugfix`
+ + List all branch
+  + `git branch`
+ + Swtich to other branch
+  + `git checkout other_branch`
+ + Delete a branch
+  + `git branch -d branch_to_delete`
+ + Merge a branch to other branch
+  + `git merge dest_branch`
