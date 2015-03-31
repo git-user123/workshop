@@ -13,3 +13,13 @@
   + `git merge --abort`
  + In case you've made a mistake while resolving a conflict and realize this only after completing the merge
   + undo it: just roll back to the commit before the merge happened with `git reset --hard`
+
++ **HOW-TO**: Resolve merge conflict
+ + Git marks the problematic area in the file by enclosing it in `<<<<<<< HEAD` and `>>>>>>> [other/branch/name]`.
+ + A line with `=======` separates the two conflicting changes.
+ + Merge pratices
+   + `git checkout master`
+   + `git pull origin master`
+   + `git merge <dev_branch>` 
+   + clean up conflict lines
+   + commit the changes made to resolve conflicts
