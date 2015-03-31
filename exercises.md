@@ -4,7 +4,19 @@
    + basically a pattern match
 
 # Inspection & Comparison 
-## git diff
+## git diff (
+ + ```git diff```
+   + unstaged changes in your working directory
+ + ```git diff --cached```
+   + changes between index and your last commit
+   + this is what would be committing if do ```git commit``` without "-a" option
+ + ```git diff HEAD```
+   + changes in working directory since your last commit
+   + this is what would be committing if do ```git commit -a```
+ + ```git diff [branch_a] [branch_b]```
+   + changes between two branches
+ + ```git diff -w```
+   + ignore whitespace change
 
 ## git log (view commit history)
  + ```git log```
