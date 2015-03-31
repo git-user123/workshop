@@ -77,13 +77,15 @@
  + master branch
    + only has entirely stable code
    + other parallel dev branches, once stable, merge into master
+
 ## topic branch 
  + single topic, short lifespan
  + created for new features, bug fixes, or experiments
+
 ## Branch strategy
- + one long-running branch only: master branch
+ + **one long-running branch only**
+   + one master branch, all topic branches are based off 'master'
    + **golden rule**: everything that gets merged into "master" must be stable
    + best suited for small agile team
-   + all topic branches are based off 'master'
    + recommend merge new stuff from master into your development branch
    
