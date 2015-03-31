@@ -35,4 +35,20 @@
   + ```git log --since="2 weeks ago"```
   + ```git log --since="2015-01-01"```
 
-## git blame
+## git stash (save unfinished changes that could be re-apply later)
+ + restore the clean working directory
+ + ```git stash`` 
+  + stash your work
+ + ```git stash list```
+ + ```git stash apply```
+  + apply the change & keep it on stack for later use
+ + ```git stash pop```
+  + apply the change & then drop it from stack
+ + ```git stash drop```
+
+## git blame (Who last modified each line of a file?)
+ + ```git log <file_name>```
+ + Specify the line range in the file
+  + ```git blame -L2,4 <file_name>```  (line 2 to 4)
+  + ```git blame -L2,+3 <file_name>``` (3 lines since Line 2)
+
