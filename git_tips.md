@@ -3,7 +3,8 @@
   + orginal remote directory
   + default name Git gives to the server you cloned from
  + HEAD
-  + You can think of `HEAD` as the "current branch"
+  +  a symbolic reference to the branch you’re currently on.
+  +  You can think of `HEAD` as the "current branch"
   
 ## Tips & tricks
 + Auto-completion on Mac
