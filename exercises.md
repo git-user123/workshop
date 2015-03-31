@@ -24,9 +24,7 @@
  + ```git diff```
    + show unstaged changes in your working directory
  + ```git diff --cached```  (same as ```git diff --staged```)
-   + changes between index and your last commit (staged changes)
-   + these changes are made by ```git add```
-   + git index: where files are placed when you want committed to the git repository.
+   + show staged changes: changes are made by ```git add```
    + this is what would be committing if do ```git commit``` without "-a" option
  + ```git diff HEAD```
    + changes in working directory since your last commit
