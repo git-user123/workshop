@@ -1,0 +1,5 @@
+Auto-Completion on Mac
+
+http://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks#Auto-Completion
+
+
