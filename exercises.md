@@ -101,3 +101,12 @@
   + `git branch -d branch_to_delete`
  + Merge a branch to other branch
   + `git merge dest_branch`
+ 
+## Sharing: Pull & Push
+ + Push: share your local work with others
+ + Pull: get the work others pushed to remote repository
+  + `git fetch` & `git pull`
+    + `git fetch --all` (fetch all changes from remote repo, not modify your working directory)
+    + `git pull origin master` (fetch all changes and merge to your local working directory)
+  + `git fetch` vs `git pull`
+    + `git pull` = `git fetch` followed by `git merge`.
