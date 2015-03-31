@@ -5,8 +5,11 @@
     `source ~/git-completion.bash`
 
 + remove untracked files from the working tree
- + ```git clean -df``` (include untracked directory)
- + ```git checkout .``` (just remove modified files, new files/directories stay)
+ + `git clean -df` (include untracked directory)
+ + `git checkout .` (just remove modified files, new files/directories stay)
+
++ `git fetch` vs `git pull`
+ + `git pull` = `git fetch` followed by `git merge`.
 
 + HOW-TO: Undo a Merge
  + always keep in mind that you can return to the state before you started the merge at any time. 
